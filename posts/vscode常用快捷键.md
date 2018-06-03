@@ -1,4 +1,4 @@
-# vscode常用配置
+# vscode常用快捷键
 #### .vscode/配置文件
 - ```setting.json``` 文件->首选项->工作区设置  ctrl shit p 选user即可自动生成
 - ```task.json``` 使用task集成外部工具
