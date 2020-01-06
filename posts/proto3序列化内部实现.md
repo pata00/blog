@@ -16,7 +16,7 @@ fixed64 | uint64_t | 小端内存原始编码(8字节) | WIRETYPE_FIXED64
 sfixed32 | int32_t | 转换为uint32_t后原始编码(4字节) | WIRETYPE_FIXED32
 sfixed64 | int64_t | 转换为uint64_t后原始编码(4字节) | WIRETYPE_FIXED64
 bool | bool | varint编码写入1 or 0 | WIRETYPE_VARINT
-string | string | 必须是UTF-8串 <br> 用varint编码写入长度(最大2<sup>32</sup>)，再写后续内存<br> <> | WIRETYPE_LENGTH_DELIMITED
+string | string | 必须是UTF-8串 <br> 用varint编码写入长度(最大2<sup>32</sup>)，再写后续内存<br> | WIRETYPE_LENGTH_DELIMITED
 bytes | string | 同上，不过不验证是否utf-8串 | WIRETYPE_LENGTH_DELIMITED
 repeat T | | 先varint写入数组长度，依次序列化对应元素 | WIRETYPE_LENGTH_DELIMITED
 object | | 先varint写入对象实际序列化长度，再序列化对象本身 | WIRETYPE_LENGTH_DELIMITED
