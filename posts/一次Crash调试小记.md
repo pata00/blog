@@ -55,7 +55,7 @@
     ```
 
 - 生成的汇编指令
-    ```
+    ```assembly
     0000000000077b60 <_ZN14MonitorManager14do_delay_tasksEv>:
     77b60:   48 83 ec 08             sub    $0x8,%rsp
     77b64:   48 8d 3d 24 e8 30 00    lea    0x30e824(%rip),%rdi        # 38638f <_IO_stdin_used+0x138f>
